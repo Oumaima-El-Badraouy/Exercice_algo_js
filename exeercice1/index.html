@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>exercice des images</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+       
+        <h1> clicker pour changer l'etat de l'image</h1>
+        <img src="./emoticon-amarelo-com-oculos-pensando_1143583-2753.jpeg"onclick=changer() id="I1">
+        <script async defer>
+            function changer(){
+                let variable = document.getElementById('I1');
+                let var1=["OIP (1).jpeg","OIP (2).jpeg","OIP (3).jpeg","OIP (4).jpeg","OIP (5).jpeg","OIP (6).jpeg","OIP (7).jpeg","OIP.jpeg","emoticon-amarelo-com-oculos-pensando_1143583-2753.jpeg.jpeg"];
+                let i=Math.floor(Math.random()*10);
+                if(i>8) i=0;
+                variable.src=var1[i];
+
+            }
+        </script>
+    </body>
+</html>
